@@ -1,66 +1,97 @@
 scriptencoding utf-8
 
-if !empty(provider#clipboard#Executable())
-  set clipboard+=unnamedplus
-endif
+" system {{{
 
-" General tab settings
-set tabstop=4       " number of visual spaces per TAB
-set softtabstop=4   " number of spaces in tab when editing
-set shiftwidth=4    " number of spaces to use for autoindent
-set expandtab       " expand tab to spaces so that tabs are spaces
+	if !empty(provider#clipboard#Executable())
+  	  set clipboard+=unnamedplus
+	endif
 
-" Set matching pairs of characters and highlight matching brackets, % to jump
-set matchpairs+=<:>,「:」,『:』,【:】,“:”,‘:’,《:》
+	set history=500
 
-" File and script encoding settings for vim
-set fileencoding=utf-8
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+	set updatetime=100
 
-" Break line at predefined characters
-set linebreak
-" Character to show before the lines that have been soft-wrapped
-set showbreak=↪
+	" Some servers have issues with backup files
+	set nobackup
+	set nowritebackup
 
-" List all matches and complete to longest common string in command mode
-set wildmode=list:longest
+	" Use mouse to select and resize windows, etc.
+	set mouse=nic  " Enable mouse in several mode
+	set mousemodel=popup  " Set the behaviour of mouse
 
-"set cursorline
 
-set scrolloff=3
+	" File and script encoding settings for vim
+	set fileencoding=utf-8
+	set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+	set encoding=utf-8
 
-" Use mouse to select and resize windows, etc.
-set mouse=nic  " Enable mouse in several mode
-set mousemodel=popup  " Set the behaviour of mouse
+	set fileformats=unix
 
-set fileformats=unix,dos  " Fileformats to use for new files
+	set pyx=3
+" }}}
 
-" Ask for confirmation when handling unsaved or read-only files
-set confirm
+" appearance {{{
+	set number relativenumber
+	set linebreak
+	set showbreak=↪
 
-set visualbell noerrorbells  " Do not use visual and errorbells
-set history=500  " The number of command and search history to keep
-                
-" Toggle listchars with :set list!
-set list listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
-set nolist "Todo: Keyboard binding
+	set title
+	set titlestring+=%(%{expand('%:p:~')}\ \ %)
 
-" Title of window
-set title
-set titlestring=
-if g:is_linux
-  set titlestring+=%(%{hostname()}\ \ %)
-endif
-set titlestring+=%(%{expand('%:p:~')}\ \ %)
+	set noshowmode " Don`t show current mode
+	set visualbell noerrorbells  " Do not use visual and errorbells
 
-" Persistent undo even after you close a file and re-open it
-set undofile
+	if has("patch-8.1.1564")
+  	  set signcolumn=number
+	else
+  	  set signcolumn=yes
+	endif
 
-" Completion Behaviour
-" Todo: Good Completion-Behaviour
-set pumheight=10  " Maximum number of items to show in popup menu
 
-set virtualedit=block  " Selects 'real block' during block selection
+	set cursorline
 
-" ~ is not an Operator, swap Characters with h/j/k/l option
-set tildeop
+	set list
+	set listchars=tab:>·,trail:·
+	set wildmode=list:longest
+
+	set tabstop=4       " number of visual spaces per TAB
+	set shiftwidth=4    " number of spaces to use for autoindent
+
+" }}}
+
+
+" behavioral {{{
+
+	set scrolloff=10
+
+	set matchpairs+=<:>,「:」,『:』,【:】,“:”,‘:’,《:》
+	autocmd FileType * set formatoptions-=o
+
+	set copyindent
+	set preserveindent
+
+	set hidden
+
+	set confirm
+
+	set shortmess+=c		" Don't pass messages to ins-completion-menu
+	set pumheight=10		" Maximum number of items to show in popup menu
+	set cmdheight=2			" Give more space for displaying messages
+
+	set undofile			" Persistent undo even after you close a file and re-open it
+	set virtualedit=block   " Selects 'real block' during block selection
+	set tildeop				" ~ is not an Operator, swap Characters with h/j/k/l option
+
+	if has("autocmd")
+  	  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    	\| exe "normal! g'\"" | endif
+	endif
+
+	if executable("rg")
+		set grepprg=rg\ --color\ never\ --column\ --no-heading\ --smart-case
+		set grepformat=%f:%l:%c:%m
+	endif
+
+" }}}
+
+	set statusline^=%{coc#status()}
+	au FocusGained,BufEnter,CursorHold * nested checktime %

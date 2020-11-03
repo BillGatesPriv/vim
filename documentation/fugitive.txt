@@ -1,0 +1,6 @@
+
+
+:Gstatus        -- :h fugitive-staging-maps
+s               -- stage
+u               -- unstage
+X               -- revert

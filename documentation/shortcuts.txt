@@ -1,0 +1,87 @@
+:Tutor
+
+----------------------------
+------Text navigation-------
+----------------------------
+
+dw/cw - delete to the end of the word
+de/ce - delete to the end of the word (exc. ' ')
+    -> c(e) places you in insert mode
+
+d$ - delete to the end of the line
+
+d(x){h,j,k,l} - delete x times in direction
+
+yw - yanks one word
+
+2{h,j,k,l} - move 2 in direction
+-> use x with {w,e,b} for skipping around
+
+<x>dd - delete x lines
+
+r(c) - replace character with c
+R - replace until ESC
+
+<x>G  - move to line number x
+
+Ctrl-o - go backward
+Ctrl-i - go forward
+
+Rename first occurence
+:s/old/new/g(c)
+
+Rename all occurences between #'s
+:#,#s/old/new/g(c)
+
+
+:!<cmd> - execute external command
+
+:w TEST - write selected text to file TEST
+:r TEST - write the contents of TEST to Cursor-Pos.
+
+:r !dir - write output of command to cursor
+
+Searching
+/xxx<\c> - search for text, \c for ignoring case
+:set hls is - highlights all matches
+
+
+:set inv<setting> - Toggle value of setting
+:set no<setting> - turn it off
+
+
+H-M-L - High - Middle - Low (of screen)
+
+In-Line Navigation:
+0 - start of line
+$ - end of line
+^ - first non blank character
+g_ - last non blank character
+
+Word Navigation:
+word: letters, digits, (underscores)
+WORD: non-whitespace
+e - end of current word
+E - end of current WORD
+
+Searching:
+/pattern - next occurence
+?pattern - previous occurence
+* - go to next occurence of current word unser cursor
+# - go to previous occurence -""-
+% - go to matching parantheses
+f<letter> - first matching letter
+t<letter> - before first matching letter
+
+
+
+----------------------------
+-Multiple window navigation-
+----------------------------
+
+
+CTRL-w-w - jump to another window
+
+
+-> NERDTree
+t - open File in a new window

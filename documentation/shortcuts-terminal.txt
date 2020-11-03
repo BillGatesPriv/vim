@@ -1,0 +1,7 @@
+ctrl+w			kill word from cursor to previous space
+ctrl+k			kill text from cursor to end of line
+ctrl+u			kill whole line
+ctrl+y			paste cleared text
+
+alt+.			paste last successfull command
+
