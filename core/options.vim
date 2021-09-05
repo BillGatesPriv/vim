@@ -73,6 +73,9 @@ scriptencoding utf-8
 
 	set confirm
 
+	set smartcase
+	set ignorecase
+
 	set shortmess+=c		" Don't pass messages to ins-completion-menu
 	set pumheight=10		" Maximum number of items to show in popup menu
 	set cmdheight=2			" Give more space for displaying messages

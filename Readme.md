@@ -32,6 +32,10 @@ Shortcut | Description
 `<Leader>w>`  | :w
 `<Leader>q>`  | :q
 `<Insert>jj`  | Esc
+`<Ctrl>+O`    | Jump forward to *older* location
+`<Ctrl>+I`    | Jump forward to *newer* location
+`/\c`         | Ignore case when searching (default)
+`/\C`         | Case sensitive search
 
 ### Buffers
 
