@@ -1,7 +1,7 @@
 # NeoVim
 
-In the following file i go over shortcuts i find helpful and the plugins i have installed.  
-`<leader>` represents ASCII character `<space>`  
+In the following file i go over shortcuts i find helpful and the plugins i have installed.
+`<leader>` represents ASCII character `<space>`
 
 ## Table of contents
 
@@ -22,12 +22,12 @@ In the following file i go over shortcuts i find helpful and the plugins i have 
 
 ## Navigation
 
-> Helpful Resources.[^1]  
+> Helpful Resources.[^1]
 
 ### General
 
-Shortcut | Description  
-:----:        | :---  
+Shortcut | Description
+:----:        | :---
 `<Leader>,>`  | unhighlight search
 `<Leader>w>`  | :w
 `<Leader>q>`  | :q
@@ -39,26 +39,26 @@ Shortcut | Description
 
 ### Buffers
 
-> A buffer is the in-memory text file.  
+> A buffer is the in-memory text file.
 
-Shortcut | Description  
-:----:        | :---  
+Shortcut | Description
+:----:        | :---
 `gl` | List all buffers
 `gb` | List all buffers and select buffer
 `gp` | Move to *previous* buffer
 `gn` | Move to *next* buffer
-`gc`  | Delete *current* buffer
+`gk`  | Kill *current* buffer
 
 ### Windows
 
-> A window is a viewport on a buffer.  
-> You can have multiple windows opened aswell as multiple windows displaying !one buffer.  
+> A window is a viewport on a buffer.
+> You can have multiple windows opened aswell as multiple windows displaying !one buffer.
 > :h split
 
-Navigation:  
+Navigation:
 
-Shortcut | Description  
-:----:        | :---  
+Shortcut | Description
+:----:        | :---
 `<Ctrl-w>+v`  | Opens new *vertical* split
 `<Ctrl-w>+s`  | Opens new *horizontal* split
 `<Ctrl-w>+c`  | Closes window
@@ -69,34 +69,34 @@ Shortcut | Description
 `<Ctrl>+h/j/k/l`  | Navigate windows
 `<Ctrl>+s`    | Swap windows
 
-Layout:  
+Layout:
 
-Shortcut | Description  
-:----:        | :---  
+Shortcut | Description
+:----:        | :---
 `:vsp <file>` | New *vertical* split
 `:sp <file>`  | New *horizontal* split
 
 ### Tabs
 
-> A tab is a collection of windows simmillar to a workspace.  
-> Tabs can be used for different projects/ units that must be managed at the same time but have a small overlap.  
+> A tab is a collection of windows simmillar to a workspace.
+> Tabs can be used for different projects/ units that must be managed at the same time but have a small overlap.
 
-Shortcut | Description  
-:----:           | :---  
+Shortcut | Description
+:----:           | :---
 `:tabnem <file>` | Opens a file in a new tab
 `:tabclose`      | Close current tab
 `gt`             | Go to next tab
 `gT`             | Go to previous tab
 `:tabfind <>`    | Find tab by name
-  
+
 [^1]: [Using buffers, windows and tabs efficiently in Vim](https://dev.to/iggredible/using-buffers-windows-and-tabs-efficiently-in-vim-56jc)
 
 ## Editing
 
 ### Commenting
 
-Shortcut | Description  
-:----:        | :---  
+Shortcut | Description
+:----:        | :---
 `gcc` | Comment line
 `gc`  | Comment visualized lines
 
@@ -104,14 +104,14 @@ Shortcut | Description
 
 ### vim-fugitive
 
-shortcut | description  
----|---  
+shortcut | description
+---|---
 `:git blame` | git blame file
 
 ### vim-gitgutter
 
-Shortcut | Description  
----|---  
+Shortcut | Description
+---|---
 `[c`/ `]c]`  | Jump between hunks
 `<leader>hp` | Peview of hunk
 `<leader>hs` | Stage hunk
@@ -119,13 +119,13 @@ Shortcut | Description
 
 ## CoC
 
-> Conquer of Completion  
-> :h coc-nvim  
+> Conquer of Completion
+> :h coc-nvim
 
 Global range:
 
-shortcut | description  
----|---  
+shortcut | description
+---|---
 `gd` | Goto Definition
 `gD` | Goto Declaration
 `gY` | Goto Type-Definition
@@ -135,8 +135,8 @@ shortcut | description
 
 Code editing:
 
-shortcut | description  
----|---  
+shortcut | description
+---|---
 `<Ctrl>+<space>` | Autocomplete/ Show error message
 `<Ctrl>+e`       | Close autocomplete pum
 `K`              | Show documentation
@@ -146,26 +146,26 @@ shortcut | description
 
 > Fast fuzzfy finder to find your way around your project
 
-[bat](https://github.com/sharkdp/bat) for syntax highlighted preview  
-[ripgrep](https://github.com/BurntSushi/ripgrep) a grep alternative  
-.. and some other features  
+[bat](https://github.com/sharkdp/bat) for syntax highlighted preview
+[ripgrep](https://github.com/BurntSushi/ripgrep) a grep alternative
+.. and some other features
 
-Trigger:  
+Trigger:
 
-shortcut | description  
----|---  
+shortcut | description
+---|---
 `<Ctrl>+g`        | RipGrep contents of files
 `<Leader>+g`      | RipGrep contents of buffers
 `<Ctrl>+p`        | RipGrep files
 `<Leader>+p`      | RipGrep buffers
 `<Ctrl>+c`        | RipGrep available commands
 
-> Most commands support `CTRL-T` / `CTRL-X` / `CTRL-V` to open in *new tab* / *new split* / *new vertical split*  
+> Most commands support `CTRL-T` / `CTRL-X` / `CTRL-V` to open in *new tab* / *new split* / *new vertical split*
 
 Navigation:
 
-shortcut | description  
----|---  
+shortcut | description
+---|---
 `<Ctrl>+P/J` | Move cursor up or down
 `<Ctrl>+c`   | Exit
 
@@ -184,15 +184,16 @@ Syntax:
 
 ## Rooter
 
-shortcut | description  
----|---  
+shortcut | description
+---|---
 `:RooterToggle` | Toggle vim-rooter
 
 ## Other helpful shortcuts
 
-shortcut | description  
----|---  
+shortcut | description
+---|---
 `~+h/j/k/l` | Invert size
+
 
 ## Features (Planned or Implemented)
 
@@ -244,6 +245,6 @@ shortcut | description
 * [junegunn/fzf](https://github.com/junegunn/fzf)
 * [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
 
-For reference:  
+For reference:
 
 * [jdaho/nvim-config](https://github.com/jdhao/nvim-config)

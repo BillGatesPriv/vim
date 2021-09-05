@@ -84,6 +84,9 @@ scriptencoding utf-8
 	set virtualedit=block   " Selects 'real block' during block selection
 	set tildeop				" ~ is not an Operator, swap Characters with h/j/k/l option
 
+	filetype plugin on
+	syntax on
+
 	if has("autocmd")
   	  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     	\| exe "normal! g'\"" | endif

@@ -30,6 +30,8 @@ call plug#begin('~/.local/bin/nvim_plugin')
 		Plug 'airblade/vim-rooter'
 		Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 		Plug 'junegunn/fzf.vim'
+
+		Plug 'vimwiki/vimwiki'
 " }}}
 
 call plug#end()
@@ -129,4 +131,8 @@ call plug#end()
 "let g:lightline#bufferline#shorten_path = 0 }}}
 " Vimspector {{
 	let g:vimspector_enable_mappings = 'HUMAN'
+" }}
+" {{
+	let g:vimwiki_list = [{'path': '~/.config/vimwiki/', 'path_html': '~/.config/vimwiki_html/'}]
+	let g:vimwiki_global_ext = 0
 " }}

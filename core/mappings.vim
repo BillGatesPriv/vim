@@ -13,7 +13,7 @@ noremap q <Nop>
     " buffers {
         nnoremap gp :bp<CR>
         nnoremap gn :bn<CR>
-        nnoremap gc :bd<CR>
+        nnoremap gk :bd<CR>
     " }}
     " windows {
 	nnoremap <C-h> <C-w>h
