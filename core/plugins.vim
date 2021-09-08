@@ -21,6 +21,7 @@ call plug#begin('~/.local/bin/nvim_plugin')
 		Plug 'neoclide/coc.nvim', {'branch': 'release'}
 		Plug 'tpope/vim-commentary'
 		Plug 'tpope/vim-sleuth'
+		Plug 'https://github.com/tpope/vim-eunuch.git'
 
 		Plug 'tpope/vim-fugitive'
 		Plug 'airblade/vim-gitgutter'
@@ -132,7 +133,12 @@ call plug#end()
 " Vimspector {{
 	let g:vimspector_enable_mappings = 'HUMAN'
 " }}
-" {{
-	let g:vimwiki_list = [{'path': '~/.config/vimwiki/', 'path_html': '~/.config/vimwiki_html/'}]
+" FZF {{
+	let g:fzf_buffers_jump = 1
+" }}
+" VimWiki {{
+	let g:vimwiki_list = [{'path': '~/.config/vimwiki/source',
+			    \ 'path_html': '~/.config/vimwiki/html',
+			    \ }]
 	let g:vimwiki_global_ext = 0
 " }}

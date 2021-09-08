@@ -11,9 +11,9 @@ noremap q <Nop>
 
 	inoremap jj <Esc>
     " buffers {
-        nnoremap gp :bp<CR>
-        nnoremap gn :bn<CR>
-        nnoremap gk :bd<CR>
+        nnoremap <silent> gp :bp<CR>
+        nnoremap <silent> gn :bn<CR>
+        nnoremap <silent> gk :bd<CR>
     " }}
     " windows {
 	nnoremap <C-h> <C-w>h
@@ -22,13 +22,17 @@ noremap q <Nop>
     	nnoremap <C-l> <C-w>l
     	nnoremap <C-l> <C-w>l
     	nnoremap <C-s> <C-w>r
+    	nnoremap <silent> <C-S-Left> :vertical resize -1<CR>
+    	nnoremap <silent> <C-S-Right> :vertical resize +1<CR>
+    	nnoremap <silent> <C-S-Down> :resize -1<CR>
+    	nnoremap <silent> <C-S-Up> :resize +1<CR>
     " }}
     " fzf {
-	nnoremap <silent> <C-g>     :<C-u>Rg<CR>        " contents of files
-	nnoremap <silent> <Leader>g :<C-u>Lines<CR>     " contents of buffers
-	nnoremap <silent> <C-p>     :<C-u>Files<CR>     " filenames
-	nnoremap <silent> <Leader>p :<C-u>Buffers<CR>   " buffernames
-	nnoremap <silent> <C-c>     :<C-u>Commands<CR>  " commands
+	nnoremap <silent> <C-g>     :<C-u>Rg<CR>
+	nnoremap <silent> <Leader>g :<C-u>Lines<CR>
+	nnoremap <silent> <C-p>     :<C-u>Files<CR>
+	nnoremap <silent> <Leader>p :<C-u>Buffers<CR>
+	nnoremap <silent> <C-c>     :<C-u>Commands<CR>
     " {{
     	noremap <CR> o<ESC>
     " }}

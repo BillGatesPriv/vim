@@ -97,6 +97,8 @@ scriptencoding utf-8
 		set grepformat=%f:%l:%c:%m
 	endif
 
+	set foldmethod=indent
+	set foldlevel=99
 " }}}
 
 	set statusline^=%{coc#status()}
