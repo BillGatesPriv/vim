@@ -6,181 +6,162 @@ In the following file i go over shortcuts i find helpful and the plugins i have 
 ## Table of contents
 
 1. [Navigation](https://github.com/coalbl4ck/nvim#navigation)
-   1. [General](https://github.com/coalbl4ck/nvim#general)
-   2. [Buffers](https://github.com/coalbl4ck/nvim#buffers)
-   3. [Windows](https://github.com/coalbl4ck/nvim#windows)
-   4. [Tabs](https://github.com/coalbl4ck/nvim#tabs)
+   1. [Search](https://github.com/coalbl4ck/nvim#search)
+   2. [Movement](https://github.com/coalbl4ck/nvim#movement)
+   3. [Files & Buffers](https://github.com/coalbl4ck/nvim#windows)
+   4. [Windows](https://github.com/coalbl4ck/nvim#tabs)
+   5. [Tabs](https://github.com/coalbl4ck/nvim#tabs)
 2. [Editing](https://github.com/coalbl4ck/nvim#editing)
-   1. [Commenting](https://github.com/coalbl4ck/nvim#commenting)
-3. [Git Integration](https://github.com/coalbl4ck/nvim#git-integration)
-   1. [vim-fugitive](https://github.com/coalbl4ck/nvim#vim-fugitive)
-   2. [vim-gitgutter](https://github.com/coalbl4ck/nvim#vim-gitgutter)
-4. [CoC](https://github.com/coalbl4ck/nvim#coc)
-5. [Other helpful shortcuts](https://github.com/coalbl4ck/nvim#other_helpful_shortcuts)
-6. [Features](https://github.com/coalbl4ck/nvim#features)
+   1. [Code Completion](https://github.com/coalbl4ck/nvim#commenting)
+   2. [Git Integration](https://github.com/coalbl4ck/nvim#commenting)
+   3. [Other](https://github.com/coalbl4ck/nvim#commenting)
+3. [FZF](https://github.com/coalbl4ck/nvim#git-integration)
+   1. [Syntax](https://github.com/coalbl4ck/nvim#vim-fugitive)
+4. [Other helpful shortcuts](https://github.com/coalbl4ck/nvim#other_helpful_shortcuts)
+5. [Features](https://github.com/coalbl4ck/nvim#features)
    1. [Plugins](https://github.com/coalbl4ck/nvim#plugins)
 
 ## Navigation
 
-> Helpful Resources.[^1]
+Tools used:
+  * [RipGrep](https://github.com/BurntSushi/ripgrep)
+  * [FZF](https://github.com/junegunn/fzf.vim)
+  * [CoC](https://github.com/neoclide/coc.nvim)
 
-### General
 
-Shortcut | Description
-:----:        | :---
-`<Leader>,>`  | unhighlight search
-`<Leader>w>`  | :w
-`<Leader>q>`  | :q
-`<Insert>jj`  | Esc
-`<Ctrl>+O`    | Jump forward to *older* location
-`<Ctrl>+I`    | Jump forward to *newer* location
-`/\c`         | Ignore case when searching (default)
-`/\C`         | Case sensitive search
+### *Search:*
 
-### Buffers
+|    Shortcut     | Description                 |
+|:---------------:|-----------------------------|
+|  `<Leader>,>`   | Unhightlight search         |
+|      `/\c`      | Ignore case while searching |
+|      `/\C`      | Case sensitive search       |
+| `:RooterToggle` | Toggle vim-rooter           |
 
-> A buffer is the in-memory text file.
+### *Movement:*
 
-Shortcut | Description
-:----:        | :---
-`gl` | List all buffers
-`gb` | List all buffers and select buffer
-`gp` | Move to *previous* buffer
-`gn` | Move to *next* buffer
-`gk`  | Kill *current* buffer
+|    Shortcut     | Description                 |
+|:---------------:|-----------------------------|
+|   `<Ctrl>+O`    | Jump to _previous_ location |
+|   `<Ctrl>+I`    | Jump to _newer_ location    |
+|      `gd`       | GoTo Definition             |
+|      `gD`       | GoTo Declaration            |
+|      `gY`       | GoTo Type-Definition        |
+|      `gi`       | GoTo Implementation         |
+|      `gr`       | GoTo References             |
+| `<leader>+<F3>` | Open CoC-Menu               |
 
-### Windows
+### *Files & Buffers:*
+
+> A buffer is a in-memory text file
+
+|   Shortcut   | Description                              |
+|:------------:|------------------------------------------|
+|  `<Ctrl>+g`  | RipGrep contents of files under vim_root |
+| `<Leader>+g` | RipGrep contents of open buffers         |
+|  `<Ctrl>+p`  | RipGrep contents of files under vim_root |
+| `<Leader>+p` | RipGrep contents of open buffers         |
+|              |                                          |
+
+### *Windows:*
 
 > A window is a viewport on a buffer.
 > You can have multiple windows opened aswell as multiple windows displaying !one buffer.
 > :h split
 
-Navigation:
+|     Shortcut     | Description                             |
+|:----------------:|-----------------------------------------|
+|   `<Ctrl-w>+v`   | Opens new *vertical* split              |
+|   `<Ctrl-w>+s`   | Opens new *horizontal* split            |
+|   `<Ctrl-w>+c`   | Closes window                           |
+|   `<Ctrl-w>+o`   | Closes other window                     |
+|   `<Ctrl-w>+r`   | Swap the two buffers                    |
+|   `<Ctrl-w>+H`   | Go from *Horizontal* to Vertical Layout |
+|   `<Ctrl-w>+J`   | Go from *Vertical* to Horizontal Layout |
+| `<Ctrl>+h/j/k/l` | Navigate windows                        |
+|    `<Ctrl>+s`    | Swap windows                            |
+|   `<C-S-Left>`   | Decrease size of vertical split         |
+|  `<C-S-Right>`   | Increase size of vertical split         |
+|   `<C-S-Down>`   | Decrease size of vertical split         |
+|    `<C-S-Up>`    | Increase size of vertical split         |
 
-Shortcut | Description
-:----:        | :---
-`<Ctrl-w>+v`  | Opens new *vertical* split
-`<Ctrl-w>+s`  | Opens new *horizontal* split
-`<Ctrl-w>+c`  | Closes window
-`<Ctrl-w>+o`  | Closes other window
-`<Ctrl-w>+r`  | Swap the two buffers
-`<Ctrl-w>+H`  | Go from *Horizontal* to Vertical Layout
-`<Ctrl-w>+J`  | Go from *Vertical* to Horizontal Layout
-`<Ctrl>+h/j/k/l`  | Navigate windows
-`<Ctrl>+s`    | Swap windows
-
-Layout:
-
-Shortcut | Description
-:----:        | :---
-`:vsp <file>` | New *vertical* split
-`:sp <file>`  | New *horizontal* split
-
-### Tabs
+### *Tabs:*
 
 > A tab is a collection of windows simmillar to a workspace.
 > Tabs can be used for different projects/ units that must be managed at the same time but have a small overlap.
 
-Shortcut | Description
-:----:           | :---
-`:tabnem <file>` | Opens a file in a new tab
-`:tabclose`      | Close current tab
-`gt`             | Go to next tab
-`gT`             | Go to previous tab
-`:tabfind <>`    | Find tab by name
-
-[^1]: [Using buffers, windows and tabs efficiently in Vim](https://dev.to/iggredible/using-buffers-windows-and-tabs-efficiently-in-vim-56jc)
+|     Shortcut     | Description               |
+|:----------------:|---------------------------|
+| `:tabnem <file>` | Opens a file in a new tab |
+|   `:tabclose`    | Close current tab         |
+|       `gt`       | Go to next tab            |
+|       `gT`       | Go to previous tab        |
+|  `:tabfind <>`   | Find tab by name          |
 
 ## Editing
 
-### Commenting
+Tools used:
 
-Shortcut | Description
-:----:        | :---
-`gcc` | Comment line
-`gc`  | Comment visualized lines
+* [CoC](https://github.com/neoclide/coc.nvim)
+* [GitGutter](https://github.com/airblade/vim-gitgutter)
+* [Fugitive](https://github.com/tpope/vim-fugitive)
 
-## Git Integration
+### *Code Completion:*
 
-### vim-fugitive
+|     shortcut     | description                       |
+|:----------------:|-----------------------------------|
+| `<Ctrl>+<space>` | Autocomplete/ Show error message  |
+|   `<leader>+r`   | Rename                            |
+|    `<Ctrl>+e`    | Close autocomplete pum            |
+|       `K`        | Show documentation                |
 
-shortcut | description
----|---
-`:git blame` | git blame file
+### *Git integration:*
 
-### vim-gitgutter
+|   shortcut   | description                    |
+|:------------:|--------------------------------|
+| `:git blame` | Git blame                      |
+| `[c` / `]c`  | Jump between uncommitted hunks |
+| `<leader>hp` | Preview hunk                   |
+| `<leader>hu` | Undo hunk                      |
+| `<leader>hs` | Stage hunk                     |
 
-Shortcut | Description
----|---
-`[c`/ `]c]`  | Jump between hunks
-`<leader>hp` | Peview of hunk
-`<leader>hs` | Stage hunk
-`<leader>hu` | Undo hunk
 
-## CoC
+### *Other:*
 
-> Conquer of Completion
-> :h coc-nvim
-
-Global range:
-
-shortcut | description
----|---
-`gd` | Goto Definition
-`gD` | Goto Declaration
-`gY` | Goto Type-Definition
-`gi` | Goto Implementation
-`gr` | Goto References
-`<leader>+<F3>` | Open coc-Menu
-
-Code editing:
-
-shortcut | description
----|---
-`<Ctrl>+<space>` | Autocomplete/ Show error message
-`<Ctrl>+e`       | Close autocomplete pum
-`K`              | Show documentation
-`<leader>+r`     | Rename
+|   shortcut    | description |
+|:-------------:|-------------|
+| `<visual>+ ~` | Invert size |
+|     `za`      | Toggle fold |
 
 ## fzf
 
 > Fast fuzzfy finder to find your way around your project
 
-[bat](https://github.com/sharkdp/bat) for syntax highlighted preview
-[ripgrep](https://github.com/BurntSushi/ripgrep) a grep alternative
-.. and some other features
+Tools used:
 
-Trigger:
+* [RipGrep](https://github.com/BurntSushi/ripgrep)
 
-shortcut | description
----|---
-`<Ctrl>+g`        | RipGrep contents of files
-`<Leader>+g`      | RipGrep contents of buffers
-`<Ctrl>+p`        | RipGrep files
-`<Leader>+p`      | RipGrep buffers
-`<Ctrl>+c`        | RipGrep available commands
+Most commands support
+* `CTRL-T` to open in _*new tab*_
+* `CTRL-X` to open in _*new split*_
+* `CTRL-V` to open in _*new vertical split*_
 
-> Most commands support `CTRL-T` / `CTRL-X` / `CTRL-V` to open in *new tab* / *new split* / *new vertical split*
+|   Shortcut   | Description            |
+|:------------:|------------------------|
+| `<Ctrl>+P/J` | Move cursor up or down |
+|  `<Ctrl>+c`  | Exit                   |
 
-Navigation:
+### *Syntax:*
 
-shortcut | description
----|---
-`<Ctrl>+P/J` | Move cursor up or down
-`<Ctrl>+c`   | Exit
-
-Syntax:
-
-| Token     | Match type                 | Description                          |
-| --------- | -------------------------- | ------------------------------------ |
+| Shortcut  | Match type                 | Description                          |
+|:---------:|----------------------------|--------------------------------------|
 | `sbtrkt`  | fuzzy-match                | Items that match `sbtrkt`            |
-| `'wild`   | exact-match (quoted)       | Items that include `wild`            |
+|  `'wild`  | exact-match (quoted)       | Items that include `wild`            |
 | `^music`  | prefix-exact-match         | Items that start with `music`        |
-| `.mp3$`   | suffix-exact-match         | Items that end with `.mp3`           |
-| `!fire`   | inverse-exact-match        | Items that do not include `fire`     |
+|  `.mp3$`  | suffix-exact-match         | Items that end with `.mp3`           |
+|  `!fire`  | inverse-exact-match        | Items that do not include `fire`     |
 | `!^music` | inverse-prefix-exact-match | Items that do not start with `music` |
 | `!.mp3$`  | inverse-suffix-exact-match | Items that do not end with `.mp3`    |
-
 
 ## Rooter
 
@@ -193,7 +174,6 @@ shortcut | description
 shortcut | description
 ---|---
 `~+h/j/k/l` | Invert size
-
 
 ## Features (Planned or Implemented)
 
@@ -216,9 +196,11 @@ shortcut | description
   - [vim-gitgutter](https://github.com/airblade/vim-gitgutter) for combinig the coding-git workflow
 - [x] Simple commenting via [vim-commentary](https://github.com/tpope/vim-commentary)
 - [x] Automatic tab adjustment via [vim-sleuth](https://github.com/tpope/vim-sleuth)
-- [ ] Search via [fzf](https://github.com/coalbl4ck/nvim/blob/master/core/plugins.vim)
+- [x] Search via [fzf](https://github.com/coalbl4ck/nvim/blob/master/core/plugins.vim)
+  - Search in open buffers/ files under project root
+  - Search open buffers/ files under project root
+- [x] Vim sugar for the UNIX shell commands with [Vim-Eunuch](https://github.com/tpope/vim-eunuch)
 - [ ] Debugging via [vimspector](https://github.com/puremourning/vimspector)
-- [ ]
 - [ ] Fast buffer jump via [vim-sneak](https://github.com/justinmk/vim-sneak).
 - [ ] LaTeX editing via [vimtex](https://github.com/lervag/vimtex)[^1].
 - [ ] Ultra fast snippet insertion via [Ultisnips](https://github.com/SirVer/ultisnips).
@@ -244,6 +226,7 @@ shortcut | description
 * [airblade/vim-rooter](https://github.com/airblade/vim-rooter)
 * [junegunn/fzf](https://github.com/junegunn/fzf)
 * [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
+* [vim-eunuch](https://github.com/tpope/vim-eunuch)
 
 For reference:
 
