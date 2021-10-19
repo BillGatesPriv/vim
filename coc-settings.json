@@ -24,9 +24,10 @@
 	    "\""
     ],
     "java.trace.server": "verbose",
-    "java.project.referencedLibraries": [
-    	"~/FAU/faecher/4.semester/Rechnerkommunikation/aufgaben/aufgabe5/NWEmu.jar"
-    ],
+    "java.home": "/usr/lib/jvm/java-16-openjdk",
+    /* "java.project.referencedLibraries": [ */
+    /* 	"~/FAU/faecher/4.semester/Rechnerkommunikation/aufgaben/aufgabe5/NWEmu.jar" */
+    /* ], */
     "python.analysis.diagnosticMode": "workspace",
     "python.linting.mypyEnabled": true,
     "python.pythonPath": "/usr/bin/python3.9",
