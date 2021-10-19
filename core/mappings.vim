@@ -69,6 +69,8 @@ noremap q <Nop>
 
     inoremap <silent><expr> <c-space> coc#refresh()
 
+    nnoremap <silent> ' :call CocAction('diagnosticPrevious')<CR>
+    nnoremap <silent> " :call CocAction('diagnosticNext')<CR>
 " }}}
 
 
