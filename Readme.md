@@ -59,8 +59,8 @@ Tools used:
 |:------------:|------------------------------------------|
 |  `<Ctrl>+g`  | RipGrep contents of files under vim_root |
 | `<Leader>+g` | RipGrep contents of open buffers         |
-|  `<Ctrl>+p`  | RipGrep contents of files under vim_root |
-| `<Leader>+p` | RipGrep contents of open buffers         |
+|  `<Ctrl>+p`  | RipGrep files under vim_root             |
+| `<Leader>+p` | RipGrep open buffers                     |
 |              |                                          |
 
 ### *Windows:*
