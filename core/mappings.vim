@@ -36,6 +36,9 @@ noremap q <Nop>
     " {{
     	noremap <CR> o<ESC>
     " }}
+    " folds {
+	    nnoremap <silent> <leader>z za
+    " }
 " }}}
 
 " coc {{{
@@ -88,6 +91,12 @@ noremap q <Nop>
     augroup default
         autocmd!
         autocmd BufWritePre * call StripTrailingWhitespace()
+    augroup END
+
+
+    augroup vimrc
+      au BufReadPre * setlocal foldmethod=indent
+      au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
     augroup END
 
 " }}}

@@ -128,10 +128,13 @@ Tools used:
 
 ### *Other:*
 
-|   shortcut    | description |
-|:-------------:|-------------|
-| `<visual>+ ~` | Invert size |
-|     `za`      | Toggle fold |
+|   shortcut    | description                  |
+|:-------------:|------------------------------|
+| `<visual>+ ~` | Invert size                  |
+|  `<leader>z`  | Toggle fold                  |
+|     `zr`      | Opens all first level folds  |
+|     `zm`      | Closes all first level folds |
+
 
 ## fzf
 

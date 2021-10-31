@@ -55,12 +55,10 @@ scriptencoding utf-8
 
 	set tabstop=4       " number of visual spaces per TAB
 	set shiftwidth=4    " number of spaces to use for autoindent
-
 " }}}
 
 
 " behavioral {{{
-
 	set scrolloff=10
 
 	set matchpairs+=<:>,「:」,『:』,【:】,“:”,‘:’,《:》
@@ -97,8 +95,11 @@ scriptencoding utf-8
 		set grepformat=%f:%l:%c:%m
 	endif
 
-	set foldmethod=indent
-	set foldlevel=99
+	let c_no_comment_fold = 1
+	let c_no_if0_fold=1
+
+	set foldlevelstart=0
+	set foldnestmax=1
 " }}}
 
 	set statusline^=%{coc#status()}
