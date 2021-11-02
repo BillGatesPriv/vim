@@ -95,11 +95,9 @@ scriptencoding utf-8
 		set grepformat=%f:%l:%c:%m
 	endif
 
-	let c_no_comment_fold = 1
-	let c_no_if0_fold=1
-
-	set foldlevelstart=0
-	set foldnestmax=1
+	" set foldignore=
+	" set foldlevelstart=0
+	" set foldmethod=indent
 " }}}
 
 	set statusline^=%{coc#status()}

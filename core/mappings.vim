@@ -37,7 +37,7 @@ noremap q <Nop>
     	noremap <CR> o<ESC>
     " }}
     " folds {
-	    nnoremap <silent> <leader>z za
+        nnoremap <silent> <leader>z za
     " }
 " }}}
 
@@ -93,12 +93,9 @@ noremap q <Nop>
         autocmd BufWritePre * call StripTrailingWhitespace()
     augroup END
 
-
-    augroup vimrc
-      au BufReadPre * setlocal foldmethod=indent
-      au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
-    augroup END
-
+    " autocmd WinEnter * normal zi
+    " autocmd WinLeave * normal zi
+    " au BufRead * normal zR
 " }}}
 
 " <CR>     | carriage return
