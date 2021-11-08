@@ -35,13 +35,20 @@ noremap q <Nop>
 	nnoremap <silent> <C-c>     :<C-u>Commands<CR>
     " {{
     	noremap <CR> o<ESC>
+    	inoremap <C-e> <Esc>a
     " }}
     " folds {
         nnoremap <silent> <leader>z za
     " }
+    " git {
+        nmap <leader>hh <Plug>(GitGutterNextHunk)
+        nmap <leader>HH <Plug>(GitGutterPrevHunk)
+    " }"
 " }}}
 
 " coc {{{
+    xmap <leader>a  <Plug>(coc-codeaction-selected)
+    nmap <leader>a  <Plug>(coc-codeaction-selected)
     " functions {{
     function! s:check_back_space() abort
       let col = col('.') - 1

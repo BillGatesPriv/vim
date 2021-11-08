@@ -95,6 +95,8 @@ scriptencoding utf-8
 		set grepformat=%f:%l:%c:%m
 	endif
 
+	set foldlevelstart=99
+	set foldmethod=indent
 	" set foldignore=
 	" set foldlevelstart=0
 	" set foldmethod=indent
