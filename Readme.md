@@ -12,11 +12,11 @@ In the following file i go over shortcuts i find helpful and the plugins i have 
    4. [Windows](https://github.com/coalbl4ck/nvim#tabs)
    5. [Tabs](https://github.com/coalbl4ck/nvim#tabs)
 2. [Editing](https://github.com/coalbl4ck/nvim#editing)
-   1. [Code Completion](https://github.com/coalbl4ck/nvim#commenting)
-   2. [Git Integration](https://github.com/coalbl4ck/nvim#commenting)
-   3. [Other](https://github.com/coalbl4ck/nvim#commenting)
-3. [FZF](https://github.com/coalbl4ck/nvim#git-integration)
-   1. [Syntax](https://github.com/coalbl4ck/nvim#vim-fugitive)
+   1. [Code Completion](https://github.com/coalbl4ck/nvim#code-completion)
+   2. [Git Integration](https://github.com/coalbl4ck/nvim#git-integration)
+   3. [Other](https://github.com/coalbl4ck/nvim#other)
+3. [FZF](https://github.com/coalbl4ck/nvim#fzf)
+   1. [Syntax](https://github.com/coalbl4ck/nvim#syntax)
 4. [Other helpful shortcuts](https://github.com/coalbl4ck/nvim#other_helpful_shortcuts)
 5. [Features](https://github.com/coalbl4ck/nvim#features)
    1. [Plugins](https://github.com/coalbl4ck/nvim#plugins)
@@ -106,7 +106,7 @@ Tools used:
 * [GitGutter](https://github.com/airblade/vim-gitgutter)
 * [Fugitive](https://github.com/tpope/vim-fugitive)
 
-### *Code Completion:*
+### *Code-Completion:*
 
 |     shortcut     | description                       |
 |:----------------:|-----------------------------------|
@@ -115,7 +115,7 @@ Tools used:
 |    `<Ctrl>+e`    | Close autocomplete pum            |
 |       `K`        | Show documentation                |
 
-### *Git integration:*
+### *Git-integration:*
 
 |   shortcut   | description                    |
 |:------------:|--------------------------------|
@@ -174,7 +174,8 @@ shortcut | description
 
 ## CoC-Explorer
 
-## Other helpful shortcuts
+> A hovering file explorer to grasp the structure of a project and
+> improve editing of files
 
 | shortcut | description     |
 |:--------:|-----------------|
@@ -190,6 +191,7 @@ shortcut | description
 |   `r`    | Rename          |
 |   `?`    | Help            |
 
+## Other helpful shortcuts
 
 shortcut | description
 ---|---
