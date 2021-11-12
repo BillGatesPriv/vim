@@ -224,12 +224,10 @@ shortcut | description
   - Search in open buffers/ files under project root
   - Search open buffers/ files under project root
 - [x] Vim sugar for the UNIX shell commands with [Vim-Eunuch](https://github.com/tpope/vim-eunuch)
-- [ ] Debugging via [vimspector](https://github.com/puremourning/vimspector)
-- [ ] Fast buffer jump via [vim-sneak](https://github.com/justinmk/vim-sneak).
-- [ ] LaTeX editing via [vimtex](https://github.com/lervag/vimtex)[^1].
-- [ ] Ultra fast snippet insertion via [Ultisnips](https://github.com/SirVer/ultisnips).
+- [x] Debugging via [vimspector](https://github.com/puremourning/vimspector)
+- [x] LaTeX editing via [vimtex](https://github.com/lervag/vimtex)[^1].
+- [x] Fuzzy searching in current project quickly via [fzf](https://github.com/junegunn/fzf.vim)
 - [ ] Tags navigation via [vista](https://github.com/liuchengxu/vista.vim).
-- [ ] Fuzzy searching in current project quickly via [LeaderF](https://github.com/Yggdroot/LeaderF)
 - [ ] Asynchronous code execution via [asynrun.vim](https://github.com/skywind3000/asyncrun.vim)
 
 ### Plugins
@@ -251,7 +249,8 @@ shortcut | description
 * [junegunn/fzf](https://github.com/junegunn/fzf)
 * [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim)
 * [vim-eunuch](https://github.com/tpope/vim-eunuch)
-
+* [vimwiki](https://github.com/vimwiki/vimwiki)
+* [vimtex](https://github.com/lervag/vimtex)
 For reference:
 
 * [jdaho/nvim-config](https://github.com/jdhao/nvim-config)
