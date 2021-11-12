@@ -19,17 +19,17 @@ In the following file i go over shortcuts i find helpful and the plugins i have 
    1. [Syntax](https://github.com/coalbl4ck/nvim#syntax)
 4. [CoC-Explorer](https://github.com/coalbl4ck/nvim#coc-explorer)
 5. [Rooter](https://github.com/coalbl4ck/nvim#rooter)
-5. [Other helpful shortcuts](https://github.com/coalbl4ck/nvim#other_helpful_shortcuts)
-6. [Features](https://github.com/coalbl4ck/nvim#features)
+6. [Other helpful shortcuts](https://github.com/coalbl4ck/nvim#other_helpful_shortcuts)
+7. [Features](https://github.com/coalbl4ck/nvim#features)
    1. [Plugins](https://github.com/coalbl4ck/nvim#plugins)
 
 ## Navigation
 
 Tools used:
-  * [RipGrep](https://github.com/BurntSushi/ripgrep)
-  * [FZF](https://github.com/junegunn/fzf.vim)
-  * [CoC](https://github.com/neoclide/coc.nvim)
 
+* [RipGrep](https://github.com/BurntSushi/ripgrep)
+* [FZF](https://github.com/junegunn/fzf.vim)
+* [CoC](https://github.com/neoclide/coc.nvim)
 
 ### *Search:*
 
@@ -119,6 +119,8 @@ Tools used:
 
 ### *Git-integration:*
 
+> Seemless Git Integration
+
 |   shortcut   | description                    |
 |:------------:|--------------------------------|
 | `:git blame` | Git blame                      |
@@ -127,6 +129,8 @@ Tools used:
 | `<leader>hu` | Undo hunk                      |
 | `<leader>hs` | Stage hunk                     |
 
+> Merging
+> Todo:
 
 ### *Other:*
 
@@ -137,7 +141,6 @@ Tools used:
 |     `zr`      | Opens all first level folds  |
 |     `zm`      | Closes all first level folds |
 
-
 ## fzf
 
 > Fast fuzzfy finder to find your way around your project
@@ -147,6 +150,7 @@ Tools used:
 * [RipGrep](https://github.com/BurntSushi/ripgrep)
 
 Most commands support
+
 * `CTRL-T` to open in _*new tab*_
 * `CTRL-X` to open in _*new split*_
 * `CTRL-V` to open in _*new vertical split*_
