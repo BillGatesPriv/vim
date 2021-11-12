@@ -24,7 +24,7 @@
 	    "\""
     ],
     "java.trace.server": "verbose",
-    "java.home": "/usr/lib/jvm/java-16-openjdk",
+    "java.home": "/usr/lib/jvm/java-17-openjdk",
     /* "java.project.referencedLibraries": [ */
     /* 	"~/FAU/faecher/4.semester/Rechnerkommunikation/aufgaben/aufgabe5/NWEmu.jar" */
     /* ], */
