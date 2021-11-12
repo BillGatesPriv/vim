@@ -172,7 +172,24 @@ shortcut | description
 ---|---
 `:RooterToggle` | Toggle vim-rooter
 
+## CoC-Explorer
+
 ## Other helpful shortcuts
+
+| shortcut | description     |
+|:--------:|-----------------|
+| `<c-v>`  | Open vertical   |
+| `<c-x>`  | Open horizontal |
+|   `yp`   | Copy File-Path  |
+|   `yy`   | Copy File       |
+|   `dd`   | Cut File        |
+|   `p`    | Paste File      |
+|   `dF`   | Delete File     |
+|   `a`    | Add File        |
+|   `A`    | Add Directory   |
+|   `r`    | Rename          |
+|   `?`    | Help            |
+
 
 shortcut | description
 ---|---

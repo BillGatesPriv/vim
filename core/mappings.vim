@@ -47,6 +47,10 @@ noremap q <Nop>
 " }}}
 
 " coc {{{
+    " coc-explorer {
+        " nmap <space>e <Cmd>CocCommand explorer<CR>
+        nmap <space>e <Cmd>CocCommand explorer --preset floating<CR>
+    " }"
     xmap <leader>a  <Plug>(coc-codeaction-selected)
     nmap <leader>a  <Plug>(coc-codeaction-selected)
     " functions {{

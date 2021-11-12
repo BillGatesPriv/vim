@@ -19,5 +19,5 @@ let s:fzfOptions = {
 \ }
 
 command! -nargs=0 OpenCocMenu call fzf#run(s:fzfOptions) " Defines callable 'function' OpenCocMenu to use certain coc actions. Why fzf?
-nnoremap <Plug>(open-coc-menu) :<C-u>OpenCocMenu<CR>  " ':' => new command executed & '<C-u>' => clear command line
+nnoremap <Plug>(open-coc-menu) :<C-u>OpenCocMenu<CR>
 nmap <silent> <Leader><F3> <Plug>(open-coc-menu)

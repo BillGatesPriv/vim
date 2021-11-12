@@ -128,8 +128,29 @@ call plug#end()
 " }}
 " COC {{{
 " :h coc-nvim
-	let g:coc_global_extionsions = ['coc-json', 'coc-sh', 'coc-tsserver', 'coc-pyright', 'coc-markdownlint', 'coc-pairs', 'coc-java', 'coc-clangd', 'coc-tslint-plugin', 'coc-css', 'coc-html', 'coc-vimtex']
+	let g:coc_global_extionsions = ['coc-json', 'coc-sh', 'coc-tsserver', 'coc-pyright', 'coc-markdownlint', 'coc-pairs', 'coc-java', 'coc-clangd', 'coc-tslint-plugin', 'coc-css', 'coc-html', 'coc-vimtex', 'coc-explorer']
+
 	set completeopt-=preview
+
+	let g:coc_explorer_global_presets = {
+	\   '.vim': {
+	\     'root-uri': '~/.vim',
+	\   },
+	\   'cocConfig': {
+	\      'root-uri': '~/.config/coc',
+	\   },
+	\   'floating': {
+	\     'position': 'floating',
+	\     'open-action-strategy': 'sourceWindow',
+	\   },
+	\   'simplify': {
+	\     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+	\   },
+	\   'buffer': {
+	\     'sources': [{'name': 'buffer', 'expand': v:true}]
+	\   },
+	\ }
+
 "let g:lightline#bufferline#shorten_path = 0 }}}
 " Vimspector {{
 	let g:vimspector_enable_mappings = 'HUMAN'

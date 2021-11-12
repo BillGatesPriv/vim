@@ -45,5 +45,21 @@
       	  "filetypes": ["sh", "bash", "zsh"],
       	  "ignoredRootPaths": ["~"]
     	}
+    },
+    "explorer.keyMappings.global": {
+	"<c-v>": "open:vsplit",
+	"<c-x>": "open:split",
+
+	"yp": "copyFilepath",
+	"yy": "copyFile",
+	"dd": "cutFile",
+	"p":  "pasteFile",
+	"dF": "deleteForver",
+
+	"a": "addFile",
+	"A":  "addDirectory",
+	"r":  "rename",
+
+	"?": "help"
     }
 }
