@@ -17,8 +17,10 @@ In the following file i go over shortcuts i find helpful and the plugins i have 
    3. [Other](https://github.com/coalbl4ck/nvim#other)
 3. [FZF](https://github.com/coalbl4ck/nvim#fzf)
    1. [Syntax](https://github.com/coalbl4ck/nvim#syntax)
-4. [Other helpful shortcuts](https://github.com/coalbl4ck/nvim#other_helpful_shortcuts)
-5. [Features](https://github.com/coalbl4ck/nvim#features)
+4. [CoC-Explorer](https://github.com/coalbl4ck/nvim#coc-explorer)
+5. [Rooter](https://github.com/coalbl4ck/nvim#rooter)
+5. [Other helpful shortcuts](https://github.com/coalbl4ck/nvim#other_helpful_shortcuts)
+6. [Features](https://github.com/coalbl4ck/nvim#features)
    1. [Plugins](https://github.com/coalbl4ck/nvim#plugins)
 
 ## Navigation
@@ -166,12 +168,6 @@ Most commands support
 | `!^music` | inverse-prefix-exact-match | Items that do not start with `music` |
 | `!.mp3$`  | inverse-suffix-exact-match | Items that do not end with `.mp3`    |
 
-## Rooter
-
-shortcut | description
----|---
-`:RooterToggle` | Toggle vim-rooter
-
 ## CoC-Explorer
 
 > A hovering file explorer to grasp the structure of a project and
@@ -191,7 +187,13 @@ shortcut | description
 |   `r`    | Rename          |
 |   `?`    | Help            |
 
-## Other helpful shortcuts
+## Rooter
+
+shortcut | description
+---|---
+`:RooterToggle` | Toggle vim-rooter
+
+## Other_helpful_shortcuts
 
 shortcut | description
 ---|---
