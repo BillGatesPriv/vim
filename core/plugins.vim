@@ -113,7 +113,7 @@ call plug#end()
 " Rooter {{
 	let g:rooter_targets = '*.cc,*.ts,*.md,*.yml,*.yaml,*.c,*.vim,*.h,*.java'
         " coc.preferences.rootPatterns: ['.git', '.hg', '.projections.json', '.pom', '.vimspector.json']
-	let g:rooter_patterns = ['.git', 'Makefile', '.vimspector.json', '=src', '=typescript']
+	let g:rooter_patterns = ['.git', 'Makefile', '.vimspector.json', '=typescript']
 	" let g:rooter_manual_only = 0 " :RooterToggle
 " }}
 " Polygot {{
