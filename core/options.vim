@@ -8,7 +8,7 @@ scriptencoding utf-8
 
 	set history=500
 
-	set updatetime=100
+	set updatetime=300
 
 	" Some servers have issues with backup files
 	set nobackup
