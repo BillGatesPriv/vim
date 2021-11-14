@@ -165,6 +165,12 @@ call plug#end()
 	let g:vimwiki_global_ext = 0
 	" let g:nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
 	let g:automatic_nested_syntaxes = 1
+	 let g:vimwiki_key_mappings =
+    	    \ {
+    	    \   'lists': 0,
+    	    \ }
+
+
 " }}
 " {{
 	let g:tex_flavor = 'latex'
