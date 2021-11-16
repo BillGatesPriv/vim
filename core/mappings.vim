@@ -30,7 +30,8 @@ noremap q <Nop>
     " fzf {
 	nnoremap <silent> <C-g>     :<C-u>Rg<CR>
 	nnoremap <silent> <Leader>g :<C-u>Lines<CR>
-	nnoremap <silent> <C-p>     :<C-u>GFiles --exclude-standard --others --cached<CR>
+	nnoremap <silent> <C-q>     :<C-u>GFiles --exclude-standard --others --cached<CR>
+	nnoremap <silent> <C-p>     :<C-u>Files<CR>
 	nnoremap <silent> <Leader>p :<C-u>Buffers<CR>
 	nnoremap <silent> <C-c>     :<C-u>Commands<CR>
     " {{
