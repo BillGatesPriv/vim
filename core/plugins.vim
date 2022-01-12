@@ -157,6 +157,7 @@ call plug#end()
 " }}
 " FZF {{
 	let g:fzf_buffers_jump = 1
+	let g:fzf_history_dir = '~/.local/share/fzf-history'
 " }}
 " VimWiki {{
 	let g:vimwiki_list = [{'path': '~/.config/vimwiki/source',
@@ -175,4 +176,13 @@ call plug#end()
 " {{
 	let g:tex_flavor = 'latex'
 	let g:vimtex_view_general_viewer = 'evince'
+	let g:Tex_IgnoredWarnings =
+	\"Underfull\n".
+	\"Overfull\n".
+	\"specifier changed to\n".
+	\"You have requested\n".
+	\"Missing number, treated as zero.\n".
+	\"There were undefined references\n"
+	\"Citation %.%# undefined"
+	let g:Tex_IgnoreLevel = 0
 " }}

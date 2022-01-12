@@ -28,6 +28,8 @@ noremap q <Nop>
     	nnoremap <silent> <C-S-Up> :resize +1<CR>
     " }}
     " fzf {
+        command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
+
 	nnoremap <silent> <C-g>     :<C-u>Rg<CR>
 	nnoremap <silent> <Leader>g :<C-u>Lines<CR>
 	nnoremap <silent> <C-q>     :<C-u>GFiles --exclude-standard --others --cached<CR>
@@ -79,13 +81,15 @@ noremap q <Nop>
     nmap <silent> gi <Plug>(coc-implementation)
     nmap <silent> gr <Plug>(coc-references)
     nmap <silent> <leader>r  <Plug>(coc-rename)
+    vnoremap <leader>r "hy:%s/<C-r>h//gc<left><left><left>
     nnoremap <silent> K :call <SID>show_documentation()<CR>
     nnoremap <silent> <c-space> :call CocAction('diagnosticInfo') <CR>
+    nnoremap <silent> <leader>o :call CocAction('runCommand', 'editor.action.organizeImport') <CR>
 
     inoremap <silent><expr> <c-space> coc#refresh()
 
-    nnoremap <silent> ' :call CocAction('diagnosticPrevious')<CR>
-    nnoremap <silent> " :call CocAction('diagnosticNext')<CR>
+    nnoremap <silent> " :call CocAction('diagnosticPrevious')<CR>
+    nnoremap <silent> ' :call CocAction('diagnosticNext')<CR>
 " }}}
 
 
