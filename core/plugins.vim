@@ -128,7 +128,7 @@ call plug#end()
 " }}
 " COC {{{
 " :h coc-nvim
-	let g:coc_global_extionsions = ['coc-json', 'coc-sh', 'coc-tsserver', 'coc-pyright', 'coc-markdownlint', 'coc-pairs', 'coc-java', 'coc-clangd', 'coc-tslint-plugin', 'coc-css', 'coc-html', 'coc-vimtex', 'coc-explorer']
+	let g:coc_global_extensions = ['coc-json', 'coc-sh', 'coc-tsserver', 'coc-pyright', 'coc-markdownlint', 'coc-pairs', 'coc-java', 'coc-clangd', 'coc-tslint-plugin', 'coc-css', 'coc-html', 'coc-vimtex', 'coc-explorer']
 
 	set completeopt-=preview
 
