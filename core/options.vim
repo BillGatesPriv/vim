@@ -32,7 +32,8 @@ scriptencoding utf-8
 " appearance {{{
 	set number relativenumber
 	set linebreak
-	set showbreak=↪
+	" set showbreak=↪
+	set showbreak=↳
 
 	set title
 	set titlestring+=%(%{expand('%:p:~')}\ \ %)
