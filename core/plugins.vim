@@ -5,7 +5,7 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 		\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
 
-call plug#begin('~/.local/bin/nvim_plugin')
+call plug#begin('~/.vim/plugged')
 " Local Plugins {{{
 
 		Plug 'gruvbox-community/gruvbox'
