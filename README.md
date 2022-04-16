@@ -258,3 +258,8 @@ shortcut | description
 For reference:
 
 * [jdaho/nvim-config](https://github.com/jdhao/nvim-config)
+
+### Dependencies
+
+* RipGrep
+* FZF
