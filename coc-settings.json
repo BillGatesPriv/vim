@@ -3,13 +3,11 @@
 
     "suggest.autoTrigger": "none",
     "suggest.noselect": false,
-    "suggest.maxPreviewWidth": 100,
 
     "codeLens.enable": true,
 
     "diagnostic.enableMessage": "jump",
     "diagnostic.checkCurrentLine": true,
-    "diagnostic.maxWindowHeight": 20,
     "diagnostic.warningSign": "⚠",
     "diagnostic.errorSign": "✖",
     "diagnostic.infoSign": "●",
@@ -32,7 +30,7 @@
     /* ], */
     "python.analysis.diagnosticMode": "workspace",
     "python.linting.mypyEnabled": true,
-    "python.pythonPath": "/usr/bin/python3.9",
+    "python.pythonPath": "/usr/bin/python3",
 
     "typescript.suggest.completeFunctionCalls": false,
 
