@@ -33,12 +33,13 @@
     "python.pythonPath": "/usr/bin/python3",
 
     "typescript.suggest.completeFunctionCalls": false,
+    /* Todo: Should work, currently doesn't */
+    // "typescript.inlayHints": true,
+    // "javascript.inlayHints": true,
 
-    "clangd.path": "/sbin/clangd",
-    // "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.0/clangd_14.0.0/bin/clangd"
-    // "clangd": {
-    // 	"path": "/sbin/clangd"
-    // },
+    /* 29.05: Installed clangd version not supporting inlayHints, npm version does */
+    // "clangd.path": "/sbin/clangd",
+    // "clangd.arguments": ["--inlay-hints=true"],
 
     "markdownlint.config": {
     	"line_length": false
